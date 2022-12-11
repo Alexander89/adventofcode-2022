@@ -9,11 +9,9 @@ export const calc = (file: string, rounds: number = 20): number => {
   const divider = monkeys
     .map(({ operationDivider }) => operationDivider)
     .reduce((acc, value) => acc * value, 1)
-  console.log(divider)
 
   for (let round = 0; round < rounds; round++) {
-    monkeys = doRound(monkeys, rounds === 20 ? undefined : divider)
-    // round % 100 === 0 && console.log(`round ${round + 1}`)
+    monkeys = doRound(monkeys, rounds === 20 /*💌*/ ? undefined : divider)
   }
 
   monkeys = monkeys.sort((a, b) => b.inspectedItems - a.inspectedItems)
