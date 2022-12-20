@@ -1,0 +1,23 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "tsc && node index.js",
+    "w-start": "tsc && node workers.js",
+    "test": "TZ=UTC jest ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.3",
+    "@types/node": "^18.11.17",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3"
+  }
+}
